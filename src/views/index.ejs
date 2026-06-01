@@ -72,12 +72,56 @@
       </div>
     </section>
 
+    <!-- Volunteer -->
+    <section id="volunteer">
+      <h2 class="section-label">Volunteer</h2>
+      <% data.volunteer.forEach(v => { %>
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-role"><%= v.role %></span>
+            <span class="exp-date"><%= v.date %></span>
+          </div>
+          <p class="exp-company"><%= v.organization %></p>
+          <ul class="exp-bullets">
+            <% v.bullets.forEach(b => { %>
+              <li><%= b %></li>
+            <% }) %>
+          </ul>
+        </div>
+      <% }) %>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <h2 class="section-label">Education</h2>
+      <% data.education.forEach(e => { %>
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-role"><%= e.degree %></span>
+            <span class="exp-date"><%= e.year %></span>
+          </div>
+          <p class="exp-company"><%= e.school %></p>
+        </div>
+      <% }) %>
+    </section>
+
+    <!-- Extra-Curricular -->
+    <section id="extras">
+      <h2 class="section-label">Extra-Curricular</h2>
+      <ul class="exp-bullets">
+        <% data.extras.forEach(item => { %>
+          <li><%= item %></li>
+        <% }) %>
+      </ul>
+    </section>
+
     <!-- Contact -->
     <section id="contact">
       <h2 class="section-label">Contact</h2>
       <div class="contact-links">
         <a href="mailto:<%= data.email %>"><%= data.email %></a>
         <a href="<%= data.github %>" target="_blank">GitHub</a>
+        <span><%= data.phone %></span>
         <span><%= data.location %></span>
       </div>
     </section>
