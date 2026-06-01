@@ -4,7 +4,7 @@ Personal resume web app built with Node.js, Express, EJS, and served via an MVC 
 
 ## Live Site
 
-[https://your-app-name.onrender.com](https://your-app-name.onrender.com)
+https://resume-et6h.onrender.com
 
 ## Tech Stack
 
