@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/head') %>
+</head>
+<body>
+
+  <%- include('partials/navbar') %>
+
+  <main>
+
+    <!-- Hero -->
+    <section id="hero">
+      <h1 class="hero-name"><%= data.name %></h1>
+      <p class="hero-title"><%= data.title %></p>
+      <p class="hero-summary"><%= data.summary %></p>
+      <div class="hero-links">
+        <a href="mailto:<%= data.email %>"><%= data.email %></a>
+        <a href="<%= data.github %>" target="_blank">GitHub</a>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <h2 class="section-label">Experience</h2>
+      <% data.experience.forEach(job => { %>
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-role"><%= job.role %></span>
+            <span class="exp-date"><%= job.date %></span>
+          </div>
+          <p class="exp-company"><%= job.company %></p>
+          <ul class="exp-bullets">
+            <% job.bullets.forEach(b => { %>
+              <li><%= b %></li>
+            <% }) %>
+          </ul>
+        </div>
+      <% }) %>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2 class="section-label">Projects</h2>
+      <% data.projects.forEach(p => { %>
+        <div class="proj-item">
+          <h3 class="proj-name"><%= p.name %></h3>
+          <p class="proj-desc"><%= p.description %></p>
+          <div class="proj-stack">
+            <% p.stack.forEach(s => { %>
+              <span class="tag"><%= s %></span>
+            <% }) %>
+          </div>
+        </div>
+      <% }) %>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2 class="section-label">Skills</h2>
+      <div class="skills-grid">
+        <% Object.entries(data.skills).forEach(([group, items]) => { %>
+          <div class="skill-group">
+            <p class="skill-group-label"><%= group %></p>
+            <div class="skill-tags">
+              <% items.forEach(s => { %>
+                <span class="tag"><%= s %></span>
+              <% }) %>
+            </div>
+          </div>
+        <% }) %>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2 class="section-label">Contact</h2>
+      <div class="contact-links">
+        <a href="mailto:<%= data.email %>"><%= data.email %></a>
+        <a href="<%= data.github %>" target="_blank">GitHub</a>
+        <span><%= data.location %></span>
+      </div>
+    </section>
+
+  </main>
+
+  <%- include('partials/footer') %>
+
+</body>
+</html>

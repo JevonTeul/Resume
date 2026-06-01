@@ -1,0 +1,55 @@
+{
+  "name": "Jevon Teul",
+  "title": "Entry Level in Computer Science",
+  "location": "Kendall Village, Stann Creek District, Belize",
+  "email": "jevonteul@gmail.com",
+  "github": "https://github.com/JevonTeul",
+  "summary": "Entry-level developer with hands-on experience building full-stack web applications and managing administrative workflows in clinical settings. Comfortable across the stack — from database schema to front-end UI — with an eye toward systems that solve real problems.",
+  "experience": [
+    {
+      "role": "Administrative & Intake Coordinator",
+      "company": "Bridge Psychological Services",
+      "date": "2025 – 2026",
+      "bullets": [
+        "Manage end-to-end client intake workflow: referrals → clinician matching → chart creation in SimplePractice",
+        "Coordinate between clinicians, clients, and management to ensure smooth onboarding",
+        "Built Excel tracking sheets to monitor referral status and staff hours",
+        "Draft and manage professional correspondence with clients and referral sources"
+      ]
+    },
+    {
+      "role": "Software Development Intern",
+      "company": "Belize Forestry Department",
+      "date": "January 2026 – May 2026",
+      "bullets": [
+        "Designed and deployed a full-stack Captive Wildlife Permit Management System",
+        "Built role-based dashboards, sortable tables, inspection calendar, and permit status tracking",
+        "Integrated email notifications via Resend API; hosted on Render with Supabase backend",
+        "Delivered a working production system used by department staff"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Captive Wildlife Permit System",
+      "description": "Production system for the Belize Forestry Department managing the full permit lifecycle. Features dashboard charts, document uploads, inspection scheduling, and paginated data tables.",
+      "stack": ["Node.js", "Express", "EJS", "PostgreSQL", "Supabase", "Render"]
+    },
+    {
+      "name": "GoBites — Food Delivery App",
+      "description": "Role-based food delivery platform with seven distinct user screens. Architected the TypeScript/Express backend and coordinated frontend integration across the team.",
+      "stack": ["TypeScript", "Express", "HTML", "CSS"]
+    }
+  ],
+  "skills": {
+    "Languages": ["JavaScript", "TypeScript", "C++", "SQL", "HTML", "CSS"],
+    "Frameworks & Tools": ["Node.js", "Express", "EJS", "PostgreSQL", "Supabase", "Git"],
+    "Platforms": ["Render", "GitHub Pages", "SimplePractice"],
+    "Software": ["Microsoft Excel", "Microsoft 365", "VS Code"]
+  },
+  "education": {
+    "degree": "Associates Degree in Information Technology",
+    "school": "University of Belize",
+    "year": "2026"
+  }
+}
